@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Update Picture</title>
+</head>
+<body>
+    <h1>Update or Add Picture for a Person</h1>
+    <form method="post" enctype="multipart/form-data">
+        Name: <input type="text" name="name" required>
+        Picture: <input type="file" name="file" accept="image/*" required>
+        <input type="submit" value="Upload">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html> -->
+
+<!-- 2 -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Update Employee Picture</title>
+</head>
+<body>
+    <h1>Update Employee Picture</h1>
+    {% if filename %}
+        <p>Picture updated successfully!</p>
+        <img src="{{ url_for('static', filename='images/' + filename) }}" alt="New Employee Picture">
+    {% endif %}
+    <form method="post" enctype="multipart/form-data">
+        Name: <input type="text" name="name" value="{{ request.form.name if request.form.name else '' }}" required>
+        Picture: <input type="file" name="file" accept="image/*" required>
+        <input type="submit" value="Upload">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html> -->
+
+<!-- 3 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Employee Picture</title>
+</head>
+<body>
+    <h1>Update Employee Picture</h1>
+    <form method="post" enctype="multipart/form-data">
+        Name: <input type="text" name="name" required>
+        Picture: <input type="file" name="file" accept="image/*" required>
+        <input type="submit" value="Upload">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
+
+

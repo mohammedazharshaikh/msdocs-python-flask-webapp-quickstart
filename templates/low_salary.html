@@ -1,0 +1,34 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Employees with Low Salary</title>
+</head>
+<body>
+    <h1>Employees with Salary Less Than $99,000</h1>
+    {% for picture in pictures %}
+        <img src="{{ url_for('static', filename=picture) }}" alt="Employee Picture" style="width:100px; height:100px;">
+    {% else %}
+        <p>No pictures available for employees with salary less than $99,000.</p>
+    {% endfor %}
+    <a href="/">Search again</a>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employees with Low Salary</title>
+</head>
+<body>
+    <h1>Employees with Salary Less Than $99,000</h1>
+    <div>
+        {% for picture in pictures %}
+            <img src="{{ url_for('static', filename=picture) }}" alt="Employee Picture" style="width:100px; height:100px;">
+        {% else %}
+            <p>No pictures available for employees with salary less than $99,000.</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Result</title>
+</head>
+<body>
+    <h1>Search Results for {{ name }}</h1>
+    {% if picture %}
+        <img src="{{ url_for('static', filename=picture) }}" alt="Picture of {{ name }}">
+    {% else %}
+        <p>No picture available.</p>
+    {% endif %}
+    <a href="/">Search again</a>
+</body>
+</html>

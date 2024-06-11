@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update or Add Employee Picture</title>
+</head>
+<body>
+    <h1>Update or Add Picture for an Employee</h1>
+    <form method="post" enctype="multipart/form-data">
+        Name: <input type="text" name="name" required>
+        Picture: <input type="file" name="file" accept="image/*" required>
+        <input type="submit" value="Upload">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>

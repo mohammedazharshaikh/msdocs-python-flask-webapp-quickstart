@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search for a Person</title>
+</head>
+<body>
+    <h1>Person Search</h1>
+    <form method="post">
+        Name: <input type="text" name="name">
+        <input type="submit" value="Search">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>

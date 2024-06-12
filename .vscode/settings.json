@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
     "appService.defaultWebAppToDeploy": "undefined/subscriptions/4de5c374-d633-44dd-aee6-c60b3bca20b7/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/Asg02",
+=======
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/4de5c374-d633-44dd-aee6-c60b3bca20b7/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/msdocs-python-flask-webapp-quickstart-demo-try",
+>>>>>>> 2bbc0197a4a76e0f8ad86638e9da730962a63cb6
     "appService.deploySubpath": "."
 }
